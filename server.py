@@ -14,16 +14,6 @@ names = []
 #TODO#0#errorhandle
 #we should implement some error sending and receiving them on client side
 
-#TODO#1#namecheck
-#there should be namechecking on server side, for proper names
-#we should check here if name is valid, and send error if its not
-#it can contain everything but spaces, and first letter cannot be anything but letters
-#its length must be shortrer than 10
-
-#TODO#2#Server:log&pass
-#there should be file on server side enabling to login to your account
-#also error checking and so on
-
 #TODO#3#privateChat
 #i thnik it should be next big thing these private connections
 #we can start it by smth like !private [name1] [name2] [name3]
@@ -197,7 +187,7 @@ def handler(c, a):
     myGuyName = login
 
     if myGuyName in connections.keys():
-        myGuy.send(bytes("your account is already logged in, sorry", 'utf-8'))
+        myGuy.send(bytes("#ERROR your account is already logged in, sorry", 'utf-8'))
         return
     
     connections[myGuyName] = myGuy

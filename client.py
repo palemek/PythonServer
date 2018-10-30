@@ -12,7 +12,7 @@ os.system('mode con: cols=78 lines=34')
 
 
 sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-sock.connect(('192.168.0.122', 10000))
+sock.connect(('207.180.226.77', 13333))
 
 window = """/----------------------------------------------------------------------------\\
 |#                                                                          #|
