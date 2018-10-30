@@ -1,0 +1,2 @@
+# PythonServer
+Simple console chat
